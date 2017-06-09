@@ -11,7 +11,8 @@
   <body>
     <h1>ID受付</h1>
     <form action='next.php' method='post'>
-      id:<input type='text' name='id'>
+      <p>id:<input type='text' name='id'></p>
+      <p>pass:<input type='text' name='pass'></p>
       <input type='submit'>
     </form>
   </body>

@@ -1,4 +1,6 @@
+<!-- 一番最初にクッキーの問い合わせをしなければいけない -->
 <?php session_start(); ?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -14,6 +16,9 @@
   // セッション変数に情報を書き込み
   if( isset($_POST['id']) && strlen($_POST['id']) > 0 )
     $_SESSION['id'] = $_POST['id'];
+
+  if( isset($_POST['pass']) && strlen($_POST['pass']) > 0 )
+    $_SESSION['pass'] = $_POST['pass'];
 
   print('POST の中身<br>');
   var_dump($_POST);
