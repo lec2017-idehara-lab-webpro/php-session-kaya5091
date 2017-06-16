@@ -1,4 +1,3 @@
-<!-- 一番最初にクッキーの問い合わせをしなければいけない -->
 <?php session_start(); ?>
 
 <!DOCTYPE html>
@@ -19,6 +18,9 @@
 
   if( isset($_POST['pass']) && strlen($_POST['pass']) > 0 )
     $_SESSION['pass'] = $_POST['pass'];
+
+
+
 
   print('POST の中身<br>');
   var_dump($_POST);
